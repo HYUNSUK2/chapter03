@@ -1,6 +1,8 @@
-package paint;
+package com.bigdata2017.paint.point;
 
-public class Point {
+import com.bigdata2017.paint.main.i.Drawable;
+
+public class Point implements Drawable {
 	private int x;
 	private int y;
 	
@@ -38,5 +40,10 @@ public class Point {
 					",y=" + y + 
 					"]을 지웠습니다.");
 		}
+	}
+
+	@Override
+	public void draw() {
+		show();
 	}
 }
